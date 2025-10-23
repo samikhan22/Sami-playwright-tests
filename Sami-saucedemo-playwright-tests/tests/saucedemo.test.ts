@@ -18,6 +18,6 @@ test('End-to-end SauceDemo test', async ({ page }) => {
   await checkout.fillInformation('John', 'Doe', '12345');
   await checkout.finishCheckout();
 
-  const confirmation = await checkout.getConfirmationText();
+  const confirmation = await checkout.getConfirmationText();//testtt
   expect(confirmation).toContain('Thank you for your order!'); //comment
 });
