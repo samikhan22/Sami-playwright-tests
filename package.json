@@ -1,0 +1,23 @@
+{
+  "name": "sami-saucedemo-playwright-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samikhan22/Sami-playwright-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samikhan22/Sami-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/samikhan22/Sami-playwright-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}
