@@ -20,20 +20,16 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        working-directory: ./Sami-saucedemo-playwright-tests
-        run: npm install
+        run: npm ci
 
-      - name: Install Playwright Browsers
-        working-directory: ./Sami-saucedemo-playwright-tests
+      - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        working-directory: ./Sami-saucedemo-playwright-tests
-        run: npm run test:ci
+        run: npx playwright test --reporter=line,junit
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
-        if: always()
         with:
           name: playwright-report
-          path: Sami-saucedemo-playwright-tests/test-results/
+          path: playwright-report/
