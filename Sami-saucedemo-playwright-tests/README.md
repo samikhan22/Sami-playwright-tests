@@ -25,7 +25,7 @@ This project demonstrates an end-to-end test automation framework for the [Sauce
 - VSCode (recommended)
 - Node.js 18+ via NVM
 
----
+-----
 
 ## 📁 Project Structure
 
