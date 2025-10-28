@@ -5,7 +5,8 @@
     "test": "npx playwright test",
     "test:ci": "npx playwright test --reporter=line,junit",
     "test:headed": "npx playwright test --headed",
-    "test:debug": "npx playwright test --debug"
+    "test:debug": "npx playwright test --debug",
+    "playwright": "playwright"
   },
   "devDependencies": {
     "@playwright/test": "^1.44.0",
