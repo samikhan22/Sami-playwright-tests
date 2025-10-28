@@ -2,7 +2,10 @@
   "name": "saucedemo-playwright-pom",
   "version": "1.0.0",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "test:ci": "npx playwright test --reporter=line,junit",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug"
   },
   "devDependencies": {
     "@playwright/test": "^1.44.0",
