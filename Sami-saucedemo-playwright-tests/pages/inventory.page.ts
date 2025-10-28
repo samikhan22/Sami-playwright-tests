@@ -4,8 +4,9 @@ export class InventoryPage {
   constructor(private page: Page) {}
 
   async addToCart(itemName: string) {
-    await this.page.click(`text=${itemName}`);
-    await this.page.click('[data-test^="add-to-cart"]');
+    // Find the item by name and add to cart
+    const itemContainer = this.page.locator('.inventory_item').filter({ hasText: itemName });
+    await itemContainer.locator('[data-test^="add-to-cart"]').click();
   }
 
   async goToCart() {
